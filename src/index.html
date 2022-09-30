@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: ;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="border-gray-200 px-2 sm:px-4 py-2.5 rounded-2xl bg-slate-600 m-1.5">
+    <div class="container flex flex-wrap justify-between items-center mx-auto">
+      <a href="index.html" class="flex items-center">
+          <h1 class="text-2xl text-teal-300 font-bold">AryaW1jaya</h1>
+      </a>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-slate-600 ">
+          <li>
+            <a href="#" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 hover:text-teal-300" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#main" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 hover:text-teal-300">About</a>
+          </li>
+          <li>
+            <a href="#social" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 hover:text-teal-300">Social Media</a>
+          </li>
+          <li>
+            <a href="#contact" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0 hover:text-teal-300">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main -->
+  <section id="main" class="border-gray-200 px-2 sm:px-4 py-2.5 rounded-2xl bg-slate-600 m-1.5 flex flex-wrap">
+    <header><h1 class="mx-auto w-full text-white font-bold text-2xl">About</h1></header>
+    <br>
+      <div class="p-5 lg:w-1/3 md:w-1/2 sm:w-full">
+        <img class="rounded-3xl" src="img/arya.JPG" alt="">
+      </div>
+      <div class="w-auto py-8 sm:mx-auto">
+        <p class="text-white">My name Arya wijaya, I am system information student in universitas pembangunan jaya. <br> I am pro gamer & programmer.</p>
+        <br>
+        <ul class="space-y-4 list-disc list-inside text-white">
+          <li>
+              <span class="font-medium text-teal-400">My Education :</span>
+              <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Madrasah Tsanawiyah Negeri 32 (Jakarta)</li>
+                  <li>Bina Informatika Vocational High School (Bintaro)</li>
+                  <li>Pembangunan Jaya University (Bintaro)</li>
+              </ul>
+          </li>
+          <li>
+              <span class="font-medium text-teal-400">My Hobby : </span>
+              <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Football</li>
+                  <li>Gaming</li>
+                  <li>Coding</li>
+                  <li>PC Enthusiast</li>
+              </ul>
+          </li>
+          <li>
+              <span class="font-medium text-teal-400">My Skills : </span>
+              <ul class="pl-5 mt-2 space-y-1 list-decimal list-inside">
+                  <li>Base      : HTML, CSS, Javascript, PHP, Java, Visual Basic, Dart</li>
+                  <li>Frameworks & Library : Codeigniter, Laravel, Flutter, Bootstrap, TailwindCSS, JQuery</li>
+                  <li>Database  : MySQL, SQL Server, MongoDB, Firebase</li>
+              </ul>
+          </li>
+      </ul>
+      </div>
+  </section>
+  <!-- Social -->
+  <section id="social" class="border-gray-200 px-2 sm:px-4 py-2.5 rounded-2xl bg-slate-600 m-1.5 flex flex-wrap">
+   <h1 class="mx-auto w-full text-white font-bold text-2xl">Social Media</h1>
+    <div class="w-16 h-16">
+      <a href="https://github.com/Aryaw1jaya">
+        <img src="https://img.icons8.com/sf-regular/344/github.png" alt="">
+      </a>
+    </div>
+    <div class="w-16 h-16">
+      <a href="https://www.linkedin.com/in/arya-wijaya-b30224165/">
+        <img src="https://img.icons8.com/fluency/344/linkedin-circled.png" alt="">
+      </a>
+    </div>
+    <div class="w-16 h-16">
+      <a href="https://www.instagram.com/arya.wjy/">
+        <img src="https://img.icons8.com/fluency/344/instagram-new.png" alt="">
+      </a>
+    </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact" class="border-gray-200 px-2 sm:px-4 py-2.5 rounded-2xl bg-slate-600 m-1.5 flex flex-wrap">
+      <header>
+        <h1 class="mx-auto w-full text-white font-bold text-2xl">Contact Me</h1>
+      </header>
+      <form class="w-4/6 mx-auto my-10">
+        <div class="mb-6">
+          <label for="email" class="block mb-2 text-sm font-medium text-teal-400">Your email</label>
+          <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Please Enter Your Email" required>
+        </div>
+        <div class="mb-6">
+          <label for="name" class="block mb-2 text-sm font-medium text-teal-400">Your Name</label>
+          <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Your Name" required>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block mb-2 text-sm font-medium text-teal-400">Your Message</label>
+          <input type="text" id="message" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5" placeholder="Your Message" required>
+        </div>
+        <button type="submit" class="text-white float-right bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center ">Send Message</button>
+      </form>
+    </section>
+</body>
+</html>
